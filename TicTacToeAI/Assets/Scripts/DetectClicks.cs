@@ -32,6 +32,9 @@ public class  DetectClicks : MonoBehaviour
             GameManager.playerHasPlayed = true;
             available = false;
             letter = "X";
+            GameManager.updateGameState = true;
+            GameManager.availableSlots -= 1;
+           // GameManager.simulating = true;
         }
     }
 }

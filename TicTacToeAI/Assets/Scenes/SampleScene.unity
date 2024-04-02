@@ -123,6 +123,43 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &64736116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 64736117}
+  m_Layer: 5
+  m_Name: Winner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &64736117
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64736116}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1547991722}
+  - {fileID: 1246324968}
+  m_Father: {fileID: 1913031864}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -195}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &85533448
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,6 +194,8 @@ MonoBehaviour:
   startButton: {fileID: 967636144}
   gameStatusPanel: {fileID: 1913031863}
   gameWinner: {fileID: 1246324969}
+  winnerTag: {fileID: 64736116}
+  winnerText: {fileID: 1246324967}
 --- !u!4 &85533450
 Transform:
   m_ObjectHideFlags: 0
@@ -528,7 +567,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28, y: -168}
+  m_AnchoredPosition: {x: 28, y: -224.4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &457459298
@@ -779,6 +818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPrefab: {fileID: 964031974801309213, guid: f701b3c10bccb9548888d28dcf6c4bbf, type: 3}
   available: 1
+  letter: 
 --- !u!65 &673170403
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1140,6 +1180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPrefab: {fileID: 964031974801309213, guid: f701b3c10bccb9548888d28dcf6c4bbf, type: 3}
   available: 1
+  letter: 
 --- !u!65 &867048630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1260,6 +1301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPrefab: {fileID: 964031974801309213, guid: f701b3c10bccb9548888d28dcf6c4bbf, type: 3}
   available: 1
+  letter: 
 --- !u!65 &954781624
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1457,9 +1499,9 @@ RectTransform:
   - {fileID: 1265726646}
   m_Father: {fileID: 1271440338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28, y: -168}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 28, y: 16}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &967636146
@@ -1605,6 +1647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPrefab: {fileID: 964031974801309213, guid: f701b3c10bccb9548888d28dcf6c4bbf, type: 3}
   available: 1
+  letter: 
 --- !u!65 &1150116627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1806,12 +1849,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246324967}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 4.3367, z: 1}
+  m_LocalScale: {x: 1, y: 4.3366995, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1913031864}
+  m_Father: {fileID: 64736117}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2202,6 +2245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPrefab: {fileID: 964031974801309213, guid: f701b3c10bccb9548888d28dcf6c4bbf, type: 3}
   available: 1
+  letter: 
 --- !u!65 &1301615940
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2305,10 +2349,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1913031864}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14, y: 11}
-  m_SizeDelta: {x: 583.871, y: 69.493}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -14, y: -184}
+  m_SizeDelta: {x: 583.871, y: 69.49298}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328489284
 MonoBehaviour:
@@ -2456,6 +2500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPrefab: {fileID: 964031974801309213, guid: f701b3c10bccb9548888d28dcf6c4bbf, type: 3}
   available: 1
+  letter: 
 --- !u!65 &1458844724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2576,6 +2621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPrefab: {fileID: 964031974801309213, guid: f701b3c10bccb9548888d28dcf6c4bbf, type: 3}
   available: 1
+  letter: 
 --- !u!65 &1478866367
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2732,7 +2778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1547991722
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2740,12 +2786,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547991721}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 4.3367, z: 1}
+  m_LocalScale: {x: 1, y: 4.3366995, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1913031864}
+  m_Father: {fileID: 64736117}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2898,6 +2944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPrefab: {fileID: 964031974801309213, guid: f701b3c10bccb9548888d28dcf6c4bbf, type: 3}
   available: 1
+  letter: 
 --- !u!65 &1655667203
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3018,6 +3065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPrefab: {fileID: 964031974801309213, guid: f701b3c10bccb9548888d28dcf6c4bbf, type: 3}
   available: 1
+  letter: 
 --- !u!65 &1711644669
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3119,9 +3167,8 @@ RectTransform:
   m_LocalScale: {x: 0.46000436, y: 0.13060826, z: 0.20451}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1547991722}
   - {fileID: 1328489283}
-  - {fileID: 1246324968}
+  - {fileID: 64736117}
   m_Father: {fileID: 1271440338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
